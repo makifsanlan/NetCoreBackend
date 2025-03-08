@@ -99,6 +99,7 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Error");
     app.UseHsts();
 }
+app.ConfigureCustomExceptionMiddleware();
 app.UseCors("CorsPolicy");
 app.UseHttpsRedirection();
 app.UseStaticFiles();
